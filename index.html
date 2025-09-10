@@ -1,0 +1,144 @@
+<!DOCTYPE html> 
+<html lang="id">
+<head>
+  <title>Ruang Baca</title>
+  <link rel="stylesheet" href="style.css">
+  <title>Ruang Baca</title>
+  <style>
+    /* --- 2. Mobile-First Styling --- */
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      margin: 20px;
+    }
+
+    h2 {
+      font-size: 14px; /* Smartphone default */
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr; /* 1 kolom untuk mobile */
+      gap: 16px;
+    }
+
+    .product {
+      border: 1px solid #c95555;
+      padding: 12px;
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    .product img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .product button {
+      margin-top: 8px;
+      background-color: #ad4545;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 12px;
+      min-width: 44px;
+      min-height: 44px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .product button:hover {
+      background-color: #751e1e;
+    }
+
+    /* Info tambahan hanya tampil di desktop */
+    .extra-info {
+      display: none;
+    }
+
+    /* --- 3. Tablet View (≤1024px) --- */
+    @media (min-width: 601px) and (max-width: 1024px) {
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+      }
+      h2 {
+        font-size: 16px;
+      }
+    }
+
+    /* --- 4. Desktop View (>1024px) --- */
+    @media (min-width: 1025px) {
+      .grid-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+      }
+      h2 {
+        font-size: 18px;
+      }
+      .extra-info {
+        display: block;
+        font-size: 14px;
+        margin-top: 8px;
+        color: #000000;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Ruang Baca</h1>
+
+  <div class="grid-container">
+    <!-- Produk 1 -->
+    <div class="product">
+      <img src="Buku/Buku1.jpg" alt="Buku 1">
+      <h2>Matahari</h2>
+       <p class="deskripsi">"Matahari" adalah buku ketiga dari serial "Bumi" karya Tere Liye. Novel ini menceritakan petualangan Raib, Seli, dan Ali ke Klan Matahari untuk mencari Faar, sosok yang hilang. Di sana, mereka menghadapi teknologi canggih, musuh baru, dan harus mengungkap rahasia untuk menyelamatkan klan tersebut, sambil menguji persahabatan dan keberanian mereka.</p>
+      <p class="extra-info">Rp 50.000 - Diskon 10%</p>
+      <button>Beli</button>
+    </div>
+
+    <!-- Produk 2 -->
+    <div class="product">
+      <img src="Buku/Buku2.jpg" alt="Buku 2">
+      <h2>Si Putih</h2>
+      <p>"Si Putih" adalah novel spin-off dari serial "Bumi" yang menceritakan masa lalu dari Si Putih, kucing kesayangan Raib. Novel ini berlatar di Klan Polaris, sebuah klan yang sering diserang oleh pandemi. Kisahnya berfokus pada persahabatan antara N-ou, seorang anak laki-laki tangguh, dan Si Putih, seekor hewan purba berkekuatan besar.</p>
+      <p class="extra-info">Rp 60.000 - Diskon 15%</p>
+      <button>Beli</button>
+    </div>
+
+    <!-- Produk 3 -->
+    <div class="product">
+      <img src="Buku/Buku3.jpg" alt="Buku 3">
+      <h2>Bumi</h2>
+      <p>"Bumi" adalah buku pertama dari serial "Bumi" karya Tere Liye. Novel ini memperkenalkan tokoh utama bernama Raib, seorang remaja 15 tahun yang memiliki kemampuan spesial untuk menghilang. Bersama kedua sahabatnya, Seli (yang bisa mengeluarkan petir) dan Ali (seorang jenius), mereka terseret ke dunia paralel bernama Klan Bulan. Mereka harus berhadapan dengan Tamus, sosok jahat yang mengancam dunia mereka.</p>
+      <p class="extra-info">Rp 70.000 - Diskon 20%</p>
+      <button>Beli</button>
+    </div>
+
+    <!-- Produk 4 -->
+    <div class="product">
+      <img src="Buku/Buku4.jpg" alt="Buku 4">
+      <h2>Komet</h2>
+      <p>"Komet" adalah buku keempat dari serial "Bumi". Novel ini menceritakan petualangan Raib, Seli, dan Ali yang tersesat di Klan Komet, sebuah klan misterius yang selalu bergerak. Mereka harus mencari pusaka paling hebat di dunia paralel sebelum musuh besar mereka, "Si Tanpa Mahkota", menemukannya. Di klan ini, persahabatan mereka diuji oleh berbagai ujian dan tantangan.</p>
+      <p class="extra-info">Rp 80.000 - Diskon 25%</p>
+      <button>Beli</button>
+    </div>
+
+    <!-- Produk 5 -->
+    <div class="product">
+      <img src="Buku/Buku5.jpg" alt="Buku 5">
+      <h2>Ceros dan Batozar</h2>
+      <p>"Ceros dan Batozar" adalah novel lepas (spin-off) dari serial "Bumi". Novel ini menceritakan dua petualangan terpisah Raib, Seli, dan Ali: yang pertama tentang Ceros, makhluk berkepala badak; dan yang kedua tentang Batozar, seorang buronan dari Klan Bulan. Di sini, mereka menemukan teknik-teknik bertarung baru dan kekuatan yang belum pernah mereka ketahui, sambil menghadapi musuh yang menguji persahabatan mereka.</p>
+      <p class="extra-info">Rp 90.000 - Diskon 30%</p>
+      <button>Beli</button>
+    </div>
+
+    <!-- Produk 6 -->
+    <div class="product">
+      <img src="Buku/Buku6.jpg" alt="Buku 6">
+      <h2>Nebula</h2>
+      <p>"Nebula" adalah buku kedelapan dari serial "Bumi" karya Tere Liye, yang berfokus pada masa lalu guru matematika Raib, Seli, dan Ali, yaitu Miss Selena. Novel ini menceritakan petualangan Selena bersama dua sahabatnya, Mata dan Tazk, saat mereka menjadi mahasiswa di Akademi Bayangan Tingkat Tinggi (ABTT). Dalam petualangan ini, mereka mencari Cawan Keabadian di Klan Nebula.</p>
+      </p>class="extra-info">Rp 100.000 - Diskon 35%</p>
+      <button>Beli</button>
+    </div>
+  </div>
+</body>
+</html>
